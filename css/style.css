@@ -1,10 +1,3 @@
-/* =====================================
-Template Name: Eshop
-Author Name: Naimur Rahman
-Author URI: http://www.wpthemesgrid.com/
-Description: Eshop - eCommerce HTML5 Template.
-Version:1.0
-========================================*/
 /*======================================
 [ CSS Table of contents ]
 01. Preloader CSS
@@ -35,6 +28,148 @@ Version:1.0
 20. 404 Error CSS
 21. Footer CSS
 ========================================*/
+html{
+	font-size:16px;
+}
+body{
+	font-size:14px;
+}
+h1{
+	font-size:32px;
+	color:#000;
+	font-weight:600;
+	text-transform:uppercase;
+}
+h2{
+	font-size:20px;
+	color:#000;
+	font-weight:500;
+	text-transform:uppercase;
+}
+.list-display li {
+  margin-bottom:.4rem;
+  font-size:0.9rem;
+  margin-bottom: 28px;
+}
+.list-checkmarks {
+  padding-left:1.5rem;
+}
+.list-checkmarks li {
+  list-style-type:none;
+  padding-left:1rem;
+	color:#fff;
+}
+.list-checkmarks li:before {    
+font-family: 'FontAwesome';
+content: "\f00c";
+margin:0 10px 0 -28px;
+color: #fff;
+}
+.list-checkmarks li:last-child
+{
+  margin-bottom: 0px;
+}
+
+.list-checkmarks2 {
+  padding-left:1.5rem;
+}
+.list-checkmarks2 li {
+  list-style-type:none;
+  padding-left:1rem;
+	color:#fff;
+}
+.list-checkmarks2 li:before {    
+	font-family: 'FontAwesome';
+	content: "\f058";
+	margin:0 10px 0 -30px;
+	color: #fff;
+    font-size: 20px;
+    vertical-align: top;
+}
+.list-checkmarks2 li:last-child
+{
+  margin-bottom: 0px;
+}
+.primary_btn{
+	background-color:#133F72;
+	border:1px solid #133F72 ;
+	text-transform:uppercase;
+	font-family:roboto;
+	font-size:16px;  
+}
+.primary_btn:hover{
+	background-color:#fff;
+	color:#000;
+	border:1px solid #133F72 ;
+}
+.secondary_btn{
+    background-color: unset !important;
+    color: #fff !important;
+    border: 1px solid #fff !important;
+}
+.secondary_btn:hover{
+    background-color:#fff !important;
+	color:#000 !important;
+	border:1px solid #133F72 !important;
+}
+.secondary2_btn{
+    background-color: unset !important;
+    color: #212121 !important;
+    border: 1px solid #133F72 !important;
+    width: 300px;
+}
+.secondary2_btn:hover{
+    background-color:#133F72 !important;
+	color:#fff !important;
+	border:1px solid #133F72 !important;
+}
+.has_input_icon{
+	float:left;
+}
+.has_input_icon .form-control {
+    padding-left: 2.90rem !important;
+}
+
+.has_input_icon .form_control_style {
+	position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    pointer-events: none;
+    color: #B6B6B6;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0px 13px;
+}
+.form-control{
+	font-family:roboto;
+	font-size:14px;
+	height:50px;
+}
+.form-control:focus{
+	box-shadow: 0 0 0 0.1rem rgb(11 65 139 / 20%);
+    border: 1px solid #6996d3 !important;
+}
+input {
+    border: 1px solid #e0e0e0;
+    height: 50px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    padding: 0px 15px !important;
+    float: left;
+}
+.was-validated{
+	border-color: #dc3545;
+}
+.btn-primary.focus, .btn-primary:focus {
+    color: #fff;
+    background-color: #133F72;
+    border-color: #133F72;
+    box-shadow: 0 0 0 0.2rem rgb(38 143 255 / 50%);
+}
 .color-plate {
 	position: fixed;
 	display: block;
@@ -180,22 +315,21 @@ Version:1.0
 .btn {
 	position: relative;
 	font-weight: 500;
-	font-size:14px;
-	color: #fff;
-	background: #333;
-	display: inline-block;
+	font-size:15px;
+	color: #133F72;
+	background: #fff; 
 	-webkit-transition: all 0.4s ease;
 	-moz-transition: all 0.4s ease;
-	transition: all 0.4s ease;
-	z-index: 5;
-	display: inline-block;
+	transition: all 0.4s ease;  
 	padding: 13px 32px;
-	border-radius: 0px;
+	border-radius: 4px;
+	border: 1px solid #133F72;
 	text-transform:uppercase;
 }
 .btn:hover{
 	color:#fff;
-	background:#F7941D;
+	background:#133F72;
+	border: 1px solid #fff;
 }
 #scrollUp {
 	right: 10px;
@@ -363,10 +497,6 @@ Version:1.0
 }
 .header.shop .nav-inner {
 	margin-right: 188px;
-}
-.header.shop .logo {
-	float: left;
-	margin-top: 35px;
 }
 .header.shop .top-contact {
 	margin-top:0px;
@@ -634,9 +764,10 @@ Version:1.0
 .header.shop .right-nav li a {
 	color: #333;
 }
-.header.shop .logo {
+.logo {
 	float: left;
-	margin: 0;
+	margin-top: 0px !important;
+	width: 140px;
 }
 .header.shop .top-contact {
 	margin-top:0px;
@@ -3426,6 +3557,68 @@ input:focus-visible {
 /*======================================
    Login & Register CSS
 ========================================*/
+.login_signup_wrap{
+	display:block;
+	margin-top: 120px;
+	margin-bottom: 120px;
+}
+.login_wrap{
+	background-color:#F0F0F0;
+	padding: 48px;	
+    text-align: center; 
+}
+.login_wrap a{
+	text-decoration: underline;
+	text-underline-offset: 0.3em;
+    text-decoration-thickness: 0.1em;
+	padding: 3px;
+}
+.login_wrap a:hover{
+	text-decoration:none;
+}
+.login_wrap p{
+		color:#B6B6B6;
+		text-transform:uppercase;
+}
+.fb i{
+	background-color: #1877F2;
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff !important;
+    font-size: 20px;
+}
+.gmail i{
+	background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    color: #000 !important;
+    font-size: 20px;
+}
+.linkedin i{
+	background-color: #2867B2;
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff !important;
+    font-size: 20px;
+}
+.signup_wrap{
+	background-color: #133F72;
+    background-image: url(../img/signup_bg.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 51px 40px 51px 40px;
+}
+.signup_wrap h2{
+	color:#fff;
+    margin-bottom: 10px;
+}
+.signup_wrap p {
+    color: #fff;
+    line-height: 20px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
 .shop.login {
 	padding: 100px 0;
 }
@@ -3806,67 +3999,61 @@ input:focus-visible {
 /*======================================
    Start Shop Newsletter CSS
 ========================================*/
-.shop-newsletter{
-	background:#fff;
+.shop_newsletter{
+	background:#133F72;
+    margin: 22px 0px;
 }
-.shop-newsletter .inner{
-	text-align:center;
+.shop_newsletter h4 {
+	color: #fff !important;
+	font-family:roboto;
+	font-size: 32px;
+	font-weight: 400;
 }
-.shop-newsletter .inner h4 {
-	color: #333;
-	font-size: 17px;
-	font-weight: 600;
-	margin-bottom: 5px;
-	text-transform: uppercase;
-}
-.shop-newsletter .inner p{
-	color:#777;
+.shop_newsletter p{
+	color:#fff;
 	font-size:14px;
-	font-weight:400;
-	margin-bottom:30px;
+	font-weight:400; 
 }
-.shop-newsletter .inner p span{
-	color:#F7941D;
+.shop_newsletter p span{
+	color:#fff;
 }
-.shop-newsletter .newsletter-inner{
+.shop_newsletter .newsletter-inner{
 	position:relative;
 	display: inline-block;
+    padding: 12px;
 }
-.shop-newsletter .newsletter-inner input {
-	width: 480px;
-	height: 55px;
+.shop_newsletter .newsletter-inner input {
+	width: 310px;
+	height: 48px;
 	border-radius: 0px;
-	padding: 0px 30px;
+	padding: 0px 15px;
 	font-weight: 400;
 	display: inline-block;
 	text-shadow: none;
 	box-shadow: none;
 	border-radius: 0;
 	border: none;
-	border: 1px solid #ececec;
-	border-radius: 30px 0 0 30px;
+	border: 1px solid #fff; 
 }
-.shop-newsletter .newsletter-inner button{
+.shop_newsletter .newsletter-inner button{
 	border:none;
 	text-shadow:none;
 	box-shadow:none;
 	border-radius:0;
 }
-.shop-newsletter .newsletter-inner .btn {
+.shop_newsletter .newsletter-inner .btn {
 	display: inline-block;
-	height: 55px;
-	padding: 10px 30px;
-	position: relative;
-	top: 0;
-	background: #F7941D;
-	color: #fff;
-	left: -4px;
-	border-radius: 0 30px 30px 0;
+	height: 48px;
+	padding: 10px 20px;
+	position: relative; 
+	background: #CED4DA;
+	color: #000;
+	left: -4px; 
 	font-size: 14px;
-	font-weight: 500;
+	font-weight: 400;
 	text-transform: uppercase;
 }
-.shop-newsletter .newsletter-inner .btn:hover{
+.shop_newsletter .newsletter-inner .btn:hover{
 	background:#333;
 	color:#fff;
 }
@@ -4871,7 +5058,10 @@ input:focus-visible {
 	20. Start Footer CSS
 ===============================*/
 .footer{
-	background:#222;
+	 
+}
+.footer-top {
+    padding: 20px 0px;
 }
 .footer .about {
 	padding-right: 50px;
@@ -4883,42 +5073,37 @@ input:focus-visible {
 	text-transform: capitalize;
 	margin-bottom: 30px;
 }
-.footer .about .logo{
-	margin-bottom:20px;
+.single-footer.address li 
+{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 500; 
 }
-.footer .about .logo img{}
-.footer .about .text{
-	color:#fff;
-	font-weight: 400;
+.single-footer.address li i {
+    font-size: 16px;
+    color: #133F72;
 }
-.footer .about .call {
-	color: #fff;
-	margin-top: 15px;
-	font-weight: 400;
+.single-footer.address li a {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
 }
-.footer .about .call span{
+.single-footer ul{ }
+.footer ul li {
 	display: block;
-}
-.footer .about .call a {
-	color: #f7941d;
-	font-size: 20px;
-	font-weight: 600;
-}
-.footer .links ul{}
-.footer .links ul li {
-	display: block;
-	margin-bottom: 8px;
+    float: left;
+    width: 200px;
 }
 .footer .links ul li:last-child{
 	margin-bottom:0;
 }
 .footer .links ul li a{
-	color:#fff;
-	font-weight: 400;
+	color:#212121;
+	font-size:14px;
+	font-weight: 500;
 }
 .footer .links ul li a:hover{
-	color:#F7941D;
-	padding-left:10px;
+	color:#133F72; 
 }
 .footer .social{}
 .footer .social .contact{}
@@ -4951,23 +5136,18 @@ input:focus-visible {
 	color:#F7941D;
 }
 /* Copyright */
-.footer .copyright{
-	
+.copyright {
+    background-color: #F0F0F0;
+    text-align: center;
+	padding: 20px 0;
 }
-.footer .copyright .inner{
-	border-top:1px solid #eeeeee3d;
-	padding:20px 0;
-}
-.footer .copyright .left{}
-.footer .copyright .right{
-	float:right;
-}
+
 .footer .copyright p{
-	color:#fff;
+	color:#212121;
 }
 .footer .copyright p a{
-	color:#fff;
-	text-decoration:underline;
+	color:#133F72;
+	text-decoration:none;
 }
 /*=============================
 	End Footer CSS
@@ -5085,7 +5265,9 @@ body.offcanvas-active{
 .header-inner button{
     padding: 0px 12px;
 	font-size:25px;
-    background: #930000;
+    border-radius: 0px;
+    color: #fff;
+	background-color:inherit;
 	border: 0px;
 }	
 .header-inner button i{

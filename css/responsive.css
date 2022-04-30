@@ -1,6 +1,19 @@
 
 /* Tablet Screen */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+.login_signup_wrap .pr-0{
+	    padding-right:  15px !important;
+}
+.login_signup_wrap .pl-0{
+	    padding-left: 15px !important;
+}
+
+.signup_wrap h2 {
+	text-align:center;
+}
+.signup_wrap p {
+	text-align:center;
+}
 .header .shopping {
     padding: 0px 5px;
     margin-left: 1px;
@@ -15,7 +28,23 @@
 .header.shop .right-bar .sinlge-bar { 
     margin-right: 22px; 
 }
-
+.shop_newsletter .newsletter-inner{
+    float: right;
+}
+.shop_newsletter .newsletter-inner input {
+    width: 233px;
+}
+.shop_newsletter .newsletter-inner .btn{	
+    padding: 10px 10px;
+}
+.logo {
+    float: none;
+    margin-top: 0px !important;
+    width: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 18px;
+}
 .section{
 	padding:50px 0px;
 }
@@ -99,8 +128,8 @@
 }
 .header.shop .search-bar input {
 	padding: 0 52px 0 20px;
-	width: auto;
-	height: auto;
+    width: 250px;
+    height: 43px;
 	font-size: 13px;
 }
 .header.shop .all-category {
@@ -353,6 +382,49 @@
 }
 /* Mobile Screen */
 @media only screen and (max-width: 767px) {
+.login_signup_wrap .pr-0{
+	    padding-right:  15px !important;
+}
+.login_signup_wrap .pl-0{
+	    padding-left: 15px !important;
+}
+.signup_wrap h2 {
+	text-align:center;
+}
+.signup_wrap p {
+	text-align:center;
+}
+.login_wrap {
+    padding: inherit;
+}
+.signup_wrap {
+	
+    background-size: 100%;
+    padding: 51px 15px 51px 15px;
+}
+
+.shop_newsletter{
+	text-align:center;
+}
+.logo {
+    float: none;
+    margin-top: 0px !important;
+    width: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 18px;
+}
+.footer ul li { 
+    width: 180px;
+}
+.single-footer.address li {
+    width: auto;
+    margin-right: 20px;
+}
+.single-footer.address li:child {
+    margin-right: 0px;
+}
+
 .breadcrumbs {
 	padding: 90px 0 90px;
 }
@@ -1082,6 +1154,21 @@
 
 }
 /* Mobile Screen */
+@media only screen and (max-width: 480px) {
+.shop_newsletter .newsletter-inner{
+    width: 100%;
+}
+.shop_newsletter .newsletter-inner input {
+    width: 100%;
+	
+    text-align: center;
+}
+.shop_newsletter .newsletter-inner .btn {
+    width: 100%;
+    top: 3px;
+    left: 0px;
+}
+}
 @media only screen and (max-width: 450px) {
 .header.shop .right-bar{
     right: 15px;
