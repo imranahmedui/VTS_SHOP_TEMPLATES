@@ -35,16 +35,14 @@ body{
 	font-size:14px;
 }
 h1{
-	font-size:32px;
+	font-size:24px;
 	color:#000;
-	font-weight:600;
-	text-transform:uppercase;
+	font-weight:500;
 }
 h2{
 	font-size:20px;
 	color:#000;
 	font-weight:500;
-	text-transform:uppercase;
 }
 .list-display li {
   margin-bottom:.4rem;
@@ -144,6 +142,7 @@ color: #fff;
     font-weight: 600;
     padding: 0px 13px;
 }
+
 .form-control{
 	font-family:roboto;
 	font-size:14px;
@@ -155,7 +154,7 @@ color: #fff;
 }
 input {
     border: 1px solid #e0e0e0;
-    height: 50px;
+/*    height: 50px; */
     font-family: 'Roboto';
     font-size: 14px;
     padding: 0px 15px !important;
@@ -355,6 +354,69 @@ input {
 #scrollUp i:hover{
 	background:#F7941D;
 	color:#fff;
+}
+
+/*======================================
+	DataTable CSS
+========================================*/
+.dataTables_length .form-control {
+  height: 30px; 
+  margin: 0px 10px 0 10px;
+}
+.dataTables_filter input {
+  height: 30px;
+  margin: 0px 0px 0px 10px;
+}
+.dataTables_filter{
+	float:right;
+}
+.dataTables_info {
+  margin: 10px 0 0 0;
+}
+.table .fa-check{
+	color:#34A853;
+	font-size:14px;
+	font-weight:900;
+	text-align:center;
+	display: block;
+	line-height: 30px;
+}
+.table .fa-trash-can{
+	color:#EA4335;
+	font-size:14px;
+	font-weight:400;
+	text-align:center;
+	display: block;
+	line-height: 30px;
+}
+.table .btn {
+  background: none;
+  padding: 0px;
+  display: block;
+  border: 0px;
+  border-radius: 0px;
+}
+.disabled .fa-trash-can{
+	color:#B9B9B9;
+}
+.dataTables_wrapper {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+.dataTables_wrapper .table thead th{
+	width: max-content !important;
+	padding: 8px !important;
+	vertical-align: middle;
+	font-size:12px !important;
+	font-family: roboto;
+	background-color:#f2f2f2;
+}
+.dataTables_wrapper .table td{
+	width: max-content !important;
+	padding: 8px !important;
+	vertical-align: middle;
+	font-size:12px !important;
+	font-family: roboto;
 }
 /*======================================
 	01. Header CSS
@@ -1904,6 +1966,120 @@ input:focus-visible {
 	color:#fff;
 	border-color:transparent;
 }
+/*======================================
+	Start My Account CSS
+========================================*/
+.my_account {
+  background-color: #F0F0F0;
+  text-align: center;
+  float: left;
+  width: 100%;
+  padding: 25px 8px 25px;
+}
+ 
+.vertical_menu1 {
+	position: relative; 
+}
+.vertical_menu1 ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.vertical_menu1 ul li {
+  /* Sub Menu */
+  text-align:left;
+  font-size: 15px;
+  font-family: roboto;
+
+}
+.vertical_menu1 ul li a i {
+	font-size: 20px;
+	padding: 9px;
+}
+.vertical_menu1 ul li a {
+	display: block;
+    font-weight: 500;
+	padding:2px 10px;
+	color: #133F72;
+	text-decoration: none;
+	-webkit-transition: 0.2s linear;
+	-moz-transition: 0.2s linear;
+	-ms-transition: 0.2s linear;
+	-o-transition: 0.2s linear;
+	transition: 0.2s linear;
+}
+.vertical_menu1 ul li a:hover {
+	background: #133F72;
+	color: #fff;
+}
+.vertical_menu1 ul li a .fa {
+	text-align: left; 
+	float:right;
+	padding: 14px 0px 0px;
+}
+.vertical_menu1 ul ul {
+	padding: 0px 0px 20px 0px;
+}
+.vertical_menu1 ul li ul li a {
+	padding: 0px 50px 0px;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 30px;
+	color:#000;
+}
+.vertical_menu1 ul li ul li a:hover {
+
+	
+}
+.widget {
+	padding: 15px;
+	font-size: 13px;
+	color: #000;
+	text-align: center;
+}
+.widget p{
+	color: #000;
+	font-weight: 500;
+}
+.digits {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 45px;
+}
+.c1{
+	background-color:#AACC9C;
+}
+.c1:hover{
+	background-color:#9dc18e;
+}
+.c2{
+	background-color:#76BFB0;
+}
+.c2:hover{
+	background-color:#6ab1a2;
+}
+.c3{
+	background-color:#BDBDBE;
+}
+.c3:hover{
+	background-color:#a6a6a9;
+}
+.c4{
+	background-color:#9F97C5;
+}
+.c4:hover{
+	background-color:#8c83b6;
+}
+.body_content_wrapper{
+	padding: 0px 10px 20px 10px;
+}
+.body_content_wrapper label{
+	font-size:13px; 
+	display: inline-flex;
+}
+/*======================================
+	End My Account CSS
+========================================*/
 /* Sinlge Product */
 .single-product{
 	margin-top:50px;
@@ -3824,9 +4000,9 @@ input:focus-visible {
 }
 /* Pagination CSS */
 .pagination {
-	text-align: left;
-	margin: 50px 0 0 0;
-	display:block;
+	text-align: right;
+	margin: 10px 0 0 0;
+	float: right;
 }
 .pagination.center {
 	text-align: center;
@@ -5092,7 +5268,7 @@ input:focus-visible {
 .footer ul li {
 	display: block;
     float: left;
-    width: 200px;
+	width: 231px;
 }
 .footer .links ul li:last-child{
 	margin-bottom:0;
@@ -5180,9 +5356,9 @@ body.offcanvas-active{
 }
 #navbar_main .dropdown-menu.show li a {
     color: #212121;
-    font-size: 15px;
+    font-size: 13px;
     text-transform: none;
-    line-height: 28px;
+    line-height: 20px;
 	padding: 5px 10px;
 }
 #navbar_main .dropdown-menu {
