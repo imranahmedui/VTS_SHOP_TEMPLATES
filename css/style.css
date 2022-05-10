@@ -328,7 +328,7 @@ input {
 .btn:hover{
 	color:#fff;
 	background:#133F72;
-	border: 1px solid #fff;
+/*	border: 1px solid #fff; */
 }
 #scrollUp {
 	right: 10px;
