@@ -119,7 +119,7 @@
 		<div class="middle-inner">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-3 col-md-2 col-12">
+					<div class="col-lg-2 col-md-3 col-12">
 						<!-- Logo -->
 						<div class="logo">
 							<a href="index.html"><img src="img/vts_logo.jpg" alt="VTS"></a>
@@ -127,9 +127,10 @@
 						<!--/ End Logo -->
 						 
 					</div>
-					<div class="col-lg-5 col-md-7 col-12">
+					<div class="col-lg-7 col-md-6 col-12">
 						<div class="search-bar-top">
-							<div class="search-bar">
+<p>Welcome, DME LIVING WELL LLC 297 E CENTER ST MANCHESTER, CT, 06040-5211, US  <a href="#">(1346619)</a></p>						
+						<div class="search-bar">
 								<select>
 									<option selected="selected">By Product</option> 
 									<option>Comparable Items</option>
@@ -142,7 +143,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-3 col-12">
+					<div class="col-lg-3 col-md-3 col-12">
 						<div class="right-bar">
 							<!-- Search Form -->
 							<div class="sinlge-bar">
@@ -357,10 +358,20 @@
 	 
 	 
 
- <div class="row">	 
-	<div class="col-12 table-responsive">
+ <div class="row py-3">	 
+	<div class="col-12">
+	<div class="py-3">
 	
-		<table id="" class="table table-bordered table-hover dt-responsive display nowrap">
+	<div class="d-flex  mb-3">
+	
+	<div class="mr-auto"><h2 class="custom_lineheigh">Shopping Lists</h2></div>
+  <div class="responsive_480"><a href="#" class="btn btn-danger btn_action">Create New Shopping List</a></div>
+ 
+	
+	</div>
+	
+	  
+	<table id="" class="table table-bordered table-hover dt-responsive display nowrap">
         <thead>
             <tr>
                  
@@ -383,7 +394,7 @@
                 <td>DME LIVING WELL</td>
                 <td><i class="fa-solid fa-check"></i></td>
                 <td class="text-center">2</td>
-                <td><a href="#delet"><i class="fa-solid fa-trash-can"></i></a></td>
+                <td><a href="#delet" data-toggle="modal" data-target="#exampleModal"><i class="fa-solid fa-trash-can"></i></a></td>
             </tr>
             <tr>
                 <td>2020 LIST</td>
@@ -393,7 +404,7 @@
                 <td>DME LIVING WELL</td>
                 <td><i class="fa-solid fa-check"></i></td>
                 <td class="text-center">179</td>
-                <td><a href="#delet"><i class="fa-solid fa-trash-can"></i></a></td>
+                <td><a href="#delet" data-toggle="modal" data-target="#exampleModal"><i class="fa-solid fa-trash-can"></i></a></td>
             </tr>
             <tr>
                 <td>SAINT FRANCIS HOSPITAL ITEMS</td>
@@ -413,7 +424,7 @@
                 <td>ALLISON CAMERON</td>
                 <td><i class="fa-solid fa-check"></i></td>
                 <td class="text-center">90</td>
-                <td><a href="#delet"><i class="fa-solid fa-trash-can"></i></a></td>
+                <td><a href="#delet" data-toggle="modal" data-target="#exampleModal"><i class="fa-solid fa-trash-can"></i></a></td>
             </tr>
 			<tr>
                 <td>2020 LIST</td>
@@ -423,7 +434,7 @@
                 <td>DME LIVING WELL</td>
                 <td><i class="fa-solid fa-check"></i></td>
                 <td class="text-center">179</td>
-                <td><a href="#delet"><i class="fa-solid fa-trash-can"></i></a></td>
+                <td><a href="#delet" data-title="Delete" data-toggle="modal" data-target="#exampleModal"><i class="fa-solid fa-trash-can"></i></a></td>
             </tr>
 			 <tr>
                 <td>SAINT FRANCIS HOSPITAL ITEMS</td>
@@ -442,8 +453,219 @@
 	 
 	 </div>
 	 </div>
+	 </div>
 	 
+
+
+
+
+<!-- Start Un-Submitted Orders -->
+ <div class="row py-0">	 
+	<div class="col-12">
+	<div class="py-0">
+	
+	<div class="d-flex  mb-1">
+	
+	<div class="mr-auto"><h6 class="custom_lineheigh">Un-submitted Orders
+	<span class="pl-3"><a href="#" class="px-3 border-left">View more</a><a href="#" class="px-3 border-left">Combine Un-Submitted Orders</a></span></h6>
+	</div>
+    
+	</div>
+	  
+	<table id="" class="table table-bordered table-hover dt-responsive un_submitted_orders nowrap">
+        <thead>
+            <tr>
+                 
+                <th>Order Date</th>
+                <th>PO Number</th>
+                <th>Created By</th>
+                <th class="text-right">Total</th>
+                <th>Order Status</th>
+                 
+            </tr>
+        </thead>
+        <tbody>
+  
+            <tr>
+                <td>03/24/2022</td>
+                <td> </td>
+                <td>DME Living Well</td>
+                <td class="text-right">$5,196.80</td> 
+                <td>Incomplete</td>
+                 
+            </tr>
+			<tr>
+                <td>03/03/2022</td>
+                <td> </td>
+                <td>DME Living Well</td>
+                <td class="text-right">$163.16</td>
+                <td>Incomplete</td>
+                 
+            </tr>
+			 <tr>
+                <td>03/02/2022</td>
+                <td> </td>
+                <td>DME Living Well</td>
+                <td class="text-right">$526.40</td>
+                <td>Incomplete</td>
+                 
+            </tr>
+          </tbody>  
+    </table>
+	
+	
 	 
+	 </div>
+	 </div>
+	 </div>
+	 
+<!-- End Un-Submitted Orders -->	 
+
+
+<!-- Start Orders Pending Shipment  -->
+ <div class="row py-0">	 
+	<div class="col-12">
+	<div class="py-0">
+	
+	<div class="d-flex  mb-1">
+	
+	<div class="mr-auto"><h6 class="custom_lineheigh">Orders Pending Shipment
+	<span class="pl-3"><a href="#" class="px-3 border-left">View more</a></span></h6>
+	</div>
+    
+	</div>
+	  
+	<table id="" class="table table-bordered table-hover dt-responsive un_submitted_orders nowrap">
+        <thead>
+            <tr>
+                 
+                <th>Order #</th>
+                <th>Order Date</th>
+                <th>PO Number</th>
+                <th class="text-right">Total</th>
+                <th>Order Status</th>
+                 
+            </tr>
+        </thead>
+        <tbody>
+  
+            <tr>
+                <td>739458896</td>
+                <td>03/23/2022</td>
+                <td>12232021MEDZAH01</td>
+                <td class="text-right">$4,168.00</td> 
+                <td>Backordered</td>
+                 
+            </tr>
+			<tr>
+                <td>739458914</td>
+                <td> 03/23/2022</td>
+                <td>12232021MEDZAH02</td>
+                <td class="text-right">$4,168.00</td>
+                <td>In Progress</td>
+                 
+            </tr>
+			 <tr>
+                <td>738765097</td>
+                <td>02/28/2022</td>
+                <td>2282022DME</td>
+                <td class="text-right">$1,799.43</td>
+                <td>Backordered</td>
+                 
+            </tr>
+          </tbody>  
+    </table>
+	
+	
+	 
+	 </div>
+	 </div>
+	 </div>
+	 
+<!-- End Orders Pending Shipment -->
+
+
+
+<!-- Start Fully Shipped Orders -->
+ <div class="row py-0">	 
+	<div class="col-12">
+	<div class="py-0">
+	
+	<div class="d-flex  mb-1">
+	
+	<div class="mr-auto"><h6 class="custom_lineheigh">Fully Shipped Orders
+	<span class="pl-3"><a href="#" class="px-3 border-left">View more</a></span></h6>
+	</div>
+    
+	</div>
+	  
+	<table id="" class="table table-bordered table-hover dt-responsive un_submitted_orders nowrap">
+        <thead>
+            <tr>
+                 
+                <th>Order #</th>
+                <th>Order Date</th>
+                <th>PO Number</th>
+                <th class="text-right">Total</th>
+                <th>Order Status</th>
+                 
+            </tr>
+        </thead>
+        <tbody>
+  
+            <tr>
+                <td>739319987</td>
+                <td>03/18/2022</td>
+                <td>03182022MED</td>
+                <td class="text-right">$1,597.20</td> 
+                <td>Fully Shipped</td>
+                 
+            </tr>
+			<tr>
+                <td>551078494</td>
+                <td> 03/16/2022</td>
+                <td>000200487301 REPLACE</td>
+                <td class="text-right">$0.00</td>
+                <td>Fully Shipped</td>
+                 
+            </tr>
+			 <tr>
+                <td>739212690</td>
+                <td>03/15/2022</td>
+                <td>03152022TRS</td>
+                <td class="text-right">$737.24</td>
+                <td>Fully Shipped</td>
+                 
+            </tr>
+			<tr>
+                <td>739167570</td>
+                <td>03/14/2022</td>
+                <td>03142022TRS</td>
+                <td class="text-right">$1,630.35</td>
+                <td>Fully Shipped</td>
+                 
+            </tr>
+			 <tr>
+                <td>739117088</td>
+                <td>03/11/2022</td>
+                <td>03112022MEDZAH2</td>
+                <td class="text-right">$6,235.20</td>
+                <td>Fully Shipped</td>
+                 
+            </tr>
+          </tbody>  
+    </table>
+	
+	
+	 
+	 </div>
+	 </div>
+	 </div>
+	 
+<!-- End Fully Shipped Orders  -->	
+
+
+
 	 
 	 </div>
 	 </div>
@@ -552,8 +774,26 @@
 
 <!-- End Footer -->	
 	 
-
-	
+ <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="alert alert-danger"><span class="glyphicon glyphicon-warning-sign"></span> Are you sure you want to delete this Record?</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="primary_btn btn-lg btn-primary "> Yes</button>
+		<button type="button" class="btn btn-default default_btn" data-dismiss="modal"> No</button>
+      </div>
+    </div>
+  </div>
+</div>
 	 
 	
 	 
@@ -604,6 +844,14 @@ $(document).ready(function() {
 	   
         ); 
 } );
+
+$('table.un_submitted_orders').DataTable({
+        paging: false,
+        ordering: false,
+        info: false,
+		searching: false,
+		dom: '<"top"i>rt<"bottom"flp><"clear">'
+    });
 
 
 function checkAll(bx) {

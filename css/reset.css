@@ -1033,7 +1033,7 @@ object {
 
 
 /* Start Modal Css */
-.modal-dialog .quickview-slider-active{
+/* .modal-dialog .quickview-slider-active{
 	display:block;
 	height:100%;
 	width:550px;
@@ -1141,7 +1141,7 @@ object {
 	overflow-y: auto;
 	max-height: 510px;
 	height: 700px;
-}
+} */
 .quickview-content {
 	padding: 40px 40px;
 }

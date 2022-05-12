@@ -44,6 +44,32 @@ h2{
 	color:#000;
 	font-weight:500;
 }
+h6{
+	font-size:14px;
+	color:#000;
+	font-weight:600;
+}
+a{
+	color:#133F72;
+}
+.btn_action{
+	background-color:#930000 !important;
+	padding:10px 16px 10px 16px !important;
+	border-radius: 4px !important;
+	color:#fff !important;
+	border-color:#930000 !important;
+	font-family:roboto;
+	font-size:16px;
+}
+.custom_lineheigh{
+	line-height:40px;
+}
+.custom_lineheigh a{
+	color:#133F72;
+}
+.custom_lineheigh .border-left{
+	border-left: 1px solid #000 !important;
+}
 .list-display li {
   margin-bottom:.4rem;
   font-size:0.9rem;
@@ -120,6 +146,9 @@ color: #fff;
     background-color:#133F72 !important;
 	color:#fff !important;
 	border:1px solid #133F72 !important;
+}
+.default_btn{
+	padding:.6rem 1rem !important;
 }
 .has_input_icon{
 	float:left;
@@ -355,7 +384,15 @@ input {
 	background:#F7941D;
 	color:#fff;
 }
-
+/*======================================
+	Modal CSS
+========================================*/
+.modal-title {
+  font-family: roboto;
+  color: #133F72;
+  font-weight: 500;
+  font-size: 18px;
+}
 /*======================================
 	DataTable CSS
 ========================================*/
@@ -417,6 +454,13 @@ input {
 	vertical-align: middle;
 	font-size:12px !important;
 	font-family: roboto;
+}
+.page-item.active .page-link {
+	background-color: #133F72;
+	border-color: #133F72;
+}
+.page-link {
+	color: #133F72;
 }
 /*======================================
 	01. Header CSS
@@ -839,13 +883,9 @@ input {
 	text-align: center;
 	margin-top: 10px;
 }
-.header.shop .search-bar {
-	margin-top: 33px;
-	width: 412px;
-	height: 40px;
-	display: inline-block;
-	background: #fff;
-	position: relative;
+.header.shop .search-bar { 
+	width: 540px;
+	height: 40px; 
 }
 .header.shop .search-bar { 
 	height: 50px;
@@ -856,6 +896,16 @@ input {
 	line-height: 45px;
 	border-radius: 50px;
 	border: 1px solid #E5E5E5;
+}
+.header.shop .search-bar-top p {
+  font-size: 12px;
+  color: #000;
+}
+.header.shop .search-bar-top a { 
+  color: #930000;
+}
+.header.shop .search-bar-top a:hover { 
+  color: #133F72;
 }
 .header.shop .nice-select {
 	clear: initial;
@@ -902,7 +952,7 @@ input {
 	color: #666;
 	border-radius: 0;
 	border: none;
-	font-size: 14px;
+	font-size: 13px;
 	font-weight: 400;
 	padding: 0 25px 0 20px; 
     border-left: 1px solid #eee;
@@ -1974,6 +2024,7 @@ input:focus-visible {
   text-align: center;
   float: left;
   width: 100%;
+  height: 100%;
   padding: 25px 8px 25px;
 }
  
