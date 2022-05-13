@@ -1187,8 +1187,28 @@
     top: 3px;
     left: 0px;
 }
+.dataTables_length label {
+    display:flex;
+}
+.dataTables_filter label {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    width: 100%;
+}
+.dataTables_filter input
+{
+	margin: 0px;
+}
 }
 @media only screen and (max-width: 450px) {
+.custom_lineheigh a {
+    color: #133F72;
+    font-size: 12px;
+    display: table;
+    margin-bottom: 5px;
+}
 .header.shop .right-bar{
     right: 15px;
 }

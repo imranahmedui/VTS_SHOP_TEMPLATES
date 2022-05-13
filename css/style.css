@@ -450,7 +450,7 @@ input {
 }
 .dataTables_wrapper .table td{
 	width: max-content !important;
-	padding: 8px !important;
+/*	padding: 8px !important; */
 	vertical-align: middle;
 	font-size:12px !important;
 	font-family: roboto;

@@ -30,6 +30,11 @@
 	
 	<!-- Popover StyleSheet -->
 	<link href="css/bootstrap-popover-x.css" media="all" rel="stylesheet" type="text/css" />
+	
+	<!-- DataTable CSS cdn -->
+	<link href="https://cdn.datatables.net/rowreorder/1.2.8/css/rowReorder.dataTables.min.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="https://cdn.datatables.net/responsive/2.3.0/css/responsive.dataTables.min.css" media="all" rel="stylesheet" type="text/css" />
+	
 <script type="text/javascript">
 
 	function darken_screen(yesno){
@@ -281,6 +286,7 @@
 	
  <!-- Start My Account -->
 	
+	
 	 <div class="container my_account_wrap">
 	 <div class="row">
 	 
@@ -371,7 +377,7 @@
 	</div>
 	
 	  
-	<table id="" class="table table-bordered table-hover dt-responsive display nowrap">
+	<table id="" class="table table-bordered table-hover  display nowrap">
         <thead>
             <tr>
                  
@@ -472,7 +478,7 @@
     
 	</div>
 	  
-	<table id="" class="table table-bordered table-hover dt-responsive un_submitted_orders nowrap">
+	<table id="" class="table table-bordered table-hover display nowrap">
         <thead>
             <tr>
                  
@@ -525,7 +531,7 @@
 <!-- Start Orders Pending Shipment  -->
  <div class="row py-0">	 
 	<div class="col-12">
-	<div class="py-0">
+	<div class="py-3">
 	
 	<div class="d-flex  mb-1">
 	
@@ -535,7 +541,7 @@
     
 	</div>
 	  
-	<table id="" class="table table-bordered table-hover dt-responsive un_submitted_orders nowrap">
+	<table id="" class="table table-bordered table-hover display nowrap">
         <thead>
             <tr>
                  
@@ -589,7 +595,7 @@
 <!-- Start Fully Shipped Orders -->
  <div class="row py-0">	 
 	<div class="col-12">
-	<div class="py-0">
+	<div class="py-3">
 	
 	<div class="d-flex  mb-1">
 	
@@ -599,7 +605,7 @@
     
 	</div>
 	  
-	<table id="" class="table table-bordered table-hover dt-responsive un_submitted_orders nowrap">
+	<table id="" class="table table-bordered table-hover display nowrap">
         <thead>
             <tr>
                  
@@ -824,10 +830,10 @@ $(".sub-menu a").click(function () {
 
 
 
-<!-- DataTable Script and css cdn -->	 
-<!------ Include the above in your HEAD tag ---------->
-
+<!-- DataTable Script cdn -->	 
 <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/rowreorder/1.2.8/js/dataTables.rowReorder.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
 
 <!-- start DataTable JS -->		
@@ -838,8 +844,12 @@ $(document).ready(function() {
          {     
 
       "aLengthMenu": [[5, 10, 25, -1], [5, 10, 25, "All"]],
-	   "iDisplayLength": 5
+	   "iDisplayLength": 5,
 		
+		rowReorder: {
+            selector: 'td:nth-child(2)'
+        },
+        responsive: true
        } 
 	   
         ); 
@@ -864,5 +874,6 @@ function checkAll(bx) {
 }
 </script>
 <!-- end DataTable JS -->	
+ 
 </body>
 </html>
