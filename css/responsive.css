@@ -388,6 +388,9 @@
   width: 40px;
 }
 }
+
+
+
 /* Mobile Screen */
 @media only screen and (max-width: 767px) {
 .dataTables_filter {
@@ -1160,10 +1163,91 @@
 	line-height: 41px;
 }
 
+.sortby_filter_wraper1 .col-sm-12 .col-md-4 {
+  width: 50% !important;
+  max-width: 50%;
+  margin: 12px 0;
+}
+.single_shorter1 input[type="text"] {
+  height: 40px;
+  width: 100%;
+}
+.sortby_filter_wraper1 .col-md-4 .col-sm-12:last-child {
+  max-width: 100%;
+}
+}
 
 
+@media only screen and (max-width: 681px) {
+.btn_wrapper{
+	display: block;
+	width: 100%;
+	margin: 12px 0;
+}
+.responsive_660 {
+  float: none !important;
+  margin: auto 0;
+  width: 100%;
+  text-align: center;
+  padding: 12px 0 0;
+}
+.order_id_wrapper h2 {
+  text-align: center;
+  width: 100%;
+}
+}
+
+@media only screen and (max-width: 660px) {
+.shop-shorter {
+	  float: left;
+	  width: 100%;
+}
+.single-shorter {
+	  display: block;
+	  margin-right: 10px;
+	  float: left;
+	  width: auto;
+	  text-align: center; 
+}
+.view-mode {
+	  float: right;
+	  width: 100%;
+	  text-align: center;
+	  margin:12px 0;
+}
+.view-mode i{
+font-size: 20px;
+}
+.body_short_discription_wrapper h2 {
+  display: block;
+  text-align: center;
+}
 
 }
+
+@media only screen and (max-width: 570px) {
+.shop-shorter {
+	  float: left;
+	  width: 100%;
+}
+.single-shorter {
+	  display: block;
+	  margin-right: auto !important;
+	  margin-left: auto !important;
+	  float: none;
+	  width: 300px;
+	  text-align: center;  
+	  margin-bottom: 30px;
+	  margin-top: 30px;
+}
+.view-mode {
+	  float: right;
+	  width: 100%;
+	  text-align: center;
+}
+
+}
+
 /* Mobile Screen */
 @media only screen and (max-width: 480px) {
 .btn_action{
@@ -1367,7 +1451,7 @@
 	display: block;
 	padding: 5px 0;
 	border-bottom: 1px solid #eee;
-	text-align: left;
+	text-align: center;
 	color: #333;
 }
 .header.shop.v3 .topbar .inner-content {
@@ -1823,8 +1907,32 @@
 	font-size: 15px;
 	margin: 10px 0 10px;
 }
+.top-left li {
+  float: left;
+  margin: 0 12px;
+}
+.top-left {
+  width: 128px;
+  margin: 0 auto;
+}
+.top-left ul li {
+	border:0px !important;
+}
 }
 
+@media only screen and (max-width: 380px) {
+	.single-shorter {
+		width: auto;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+.single-shorter input{
+  float: none;
+  margin-bottom:12px;
+  
+  }
+
+}
 @media only screen and (max-width: 370px) {
 #navbar_main a{
     font-size: 14px;
