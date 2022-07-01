@@ -101,7 +101,7 @@
 						<!-- Top Left -->
 						<div class="top-left">
 							<ul class="list-main">
-								<li><a href="tel:+15742039845"><i class="fa fa-phone-alt"></i><span> +1 (574) 203-9845</span></a></li>
+								<li><a href="tel:+1 (860) 288-8696"><i class="fa fa-phone-alt"></i><span>+1 (860) 288-8696</span></a></li>
 								<li><a href="mailto:contact@vectortechsol.com"> <i class="fa-solid fa-envelope"></i> <span>contact@vectortechsol.com</span></a></li>
 								<li><a href="#"><i class="fa-solid fa-location-dot"></i><span> Store location</span></a></li>
 							</ul>
@@ -439,7 +439,7 @@
  
 	
 	  
-	<table id="items_example" class="table table-bordered display nowrap view_item_list compact table-hover" style="width:100%;">
+	<table id="mytable" class="table table-bordered display nowrap view_item_list compact table-hover" style="width:100%;">
         <thead>
             <tr>
                  
@@ -454,7 +454,7 @@
                 <th>PO#</th>
                 <th class="text-center">Due Date</th>
                 <th class="text-center">Status</th>
-				<th class="text-center"><input type="checkbox" name="select_all" value="1" id="example-select-all"></th>
+				<th class="text-center"><input type="checkbox" name="select_all" value="1" id="checkall"></th>
   			   
             </tr>
         </thead>
@@ -473,7 +473,7 @@
                 <td>03282022DLW</td>
                 <td class="text-center">04/29/2022</td>
                 <td class="text-center"> </td>
-				<td class="text-center"><input type="checkbox" name="check" value="2" id=" "> </td>
+				<td class="text-center"><input type="checkbox" class="checkthis" /></td>
             </tr>
             <tr>
               <td>1545120</td>
@@ -489,7 +489,7 @@
                 <td>10202021DME</td>
                 <td class="text-center">11/22/2021</td>
                 <td class="text-center"> </td>
-				<td class="text-center"><input type="checkbox" name="check" value="2" id=" "> </td>
+				<td class="text-center"><input type="checkbox" class="checkthis" /></td>
             </tr>
             <tr>
               <td>1545120</td>
@@ -505,7 +505,7 @@
                 <td>03282022DLW</td>
                 <td class="text-center">04/29/2022</td>
                 <td class="text-center"> </td>
-				<td class="text-center"><input type="checkbox" name="check" value="2" id=" "> </td>
+				<td class="text-center"><input type="checkbox" class="checkthis" /></td>
             </tr>
             <tr>
               <td>1545120</td>
@@ -521,7 +521,7 @@
                 <td>10202021DME</td>
                 <td class="text-center">11/22/2021</td>
                 <td class="text-center"> </td>
-				<td class="text-center"><input type="checkbox" name="check" value="2" id=" "> </td>
+				<td class="text-center"><input type="checkbox" class="checkthis" /></td>
             </tr>
             <tr>
               <td>1545120</td>
@@ -537,7 +537,7 @@
                 <td>06282021</td>
                 <td class="text-center">08/22/2021</td>
                 <td class="text-center"> </td>
-				<td class="text-center"><input type="checkbox" name="check" value="2" id=" "> </td>
+				<td class="text-center"><input type="checkbox" class="checkthis" /></td>
             </tr>
             <tr>
               <td>1545120</td>
@@ -553,7 +553,7 @@
                 <td>03282022DLW</td>
                 <td class="text-center">04/29/2022</td>
                 <td class="text-center"> </td>
-				<td class="text-center"><input type="checkbox" name="check" value="2" id=" "> </td>
+				<td class="text-center"><input type="checkbox" class="checkthis" /></td>
             </tr>
           </tbody>  
     </table>
@@ -649,7 +649,7 @@
 <div class="single-footer address">
 <ul>
 <li><i class="fa-solid fa-location-dot"></i> 317 George St Suite 320 New Brunswick NJ 08901</li>
-<li><a href="tel:+1(574)203-9845"><i class="fa fa-phone-alt" aria-hidden="true"></i> +1 (574) 203-9845</a></li>
+<li><a href="tel:+1 (860) 288-8696"><i class="fa fa-phone-alt" aria-hidden="true"></i>+1 (860) 288-8696</a></li>
 <li><a href="mailto:contact@vectortechsol.com"><i class="fa-solid fa-envelope"></i> contact@vectortechsol.com</a></li> 
 </ul>
 </div>
@@ -751,6 +751,23 @@ $(document).ready(function() {
         responsive: true
     } );
 } );
+
+$(document).ready(function(){
+$("#mytable #checkall").click(function () {
+        if ($("#mytable #checkall").is(':checked')) {
+            $("#mytable input[type=checkbox]").each(function () {
+                $(this).prop("checked", true);
+            });
+
+        } else {
+            $("#mytable input[type=checkbox]").each(function () {
+                $(this).prop("checked", false);
+            });
+        }
+    });
+    
+    $("[data-toggle=tooltip]").tooltip();
+});
 </script>
 <!-- end DataTable JS -->	
  

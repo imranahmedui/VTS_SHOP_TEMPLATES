@@ -19,7 +19,10 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 	<!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/9ddbcb7f65.js" crossorigin="anonymous"></script>
-   
+ 
+ <!-- Icons CSS -->
+    <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+     
 	 <!-- Nice Select CSS -->
     <link rel="stylesheet" href="css/niceselect.css"> 
 	
@@ -101,7 +104,7 @@
 						<!-- Top Left -->
 						<div class="top-left">
 							<ul class="list-main">
-								<li><a href="tel:+15742039845"><i class="fa fa-phone-alt"></i><span> +1 (574) 203-9845</span></a></li>
+								<li><a href="tel:+15742039845"><i class="fa fa-phone-alt"></i><span> +1 (860) 288-8696</span></a></li>
 								<li><a href="mailto:contact@vectortechsol.com"> <i class="fa-solid fa-envelope"></i> <span>contact@vectortechsol.com</span></a></li>
 								<li><a href="#"><i class="fa-solid fa-location-dot"></i><span> Store location</span></a></li>
 							</ul>
@@ -489,11 +492,11 @@ TORRINGTON,  CT  06790-4470</td>
  
 	
 	  
-	<table id="items_example" class="table table-bordered display nowrap view_item_list compact" style="width:100%;">
+	<table id="mytable" class="table table-bordered display nowrap view_item_list compact" style="width:100%;">
         <thead>
             <tr>
                  
-                <th><input type="checkbox" name="select_all" value="1" id="example-select-all"></th>
+                <th><input type="checkbox" name="select_all" value="1" id="checkall"></th>
 				<th>#</th>
                 <th>SKU</th>
                 <th>QTY</th>
@@ -510,7 +513,7 @@ TORRINGTON,  CT  06790-4470</td>
         </thead>
         <tbody>
             <tr>
-                <td><input type="checkbox" name="check" value="2" id=" "> </td>
+                <td><input type="checkbox" name="check" value="2" class="checkthis"> </td>
               <td>10</td>
                 <td>HCS70004H</td>
                 <td>1</td>
@@ -536,7 +539,7 @@ TORRINGTON,  CT  06790-4470</td>
             </tr>
              <tr>
              
-				<td><input type="checkbox" name="check" value="2" id=" "> </td>   
+                <td><input type="checkbox" name="check" value="2" class="checkthis"> </td>  
 				 <td>20</td>
                 <td>HCS4482H</td>
                 <td>1<a href=""></a></td>
@@ -677,7 +680,7 @@ by Medzah Industries Holdings LP, a Texas limited partnership.
 <div class="single-footer address">
 <ul>
 <li><i class="fa-solid fa-location-dot"></i> 317 George St Suite 320 New Brunswick NJ 08901</li>
-<li><a href="tel:+1(574)203-9845"><i class="fa fa-phone-alt" aria-hidden="true"></i> +1 (574) 203-9845</a></li>
+<li><a href="tel:+1(574)203-9845"><i class="fa fa-phone-alt" aria-hidden="true"></i> +1 (860) 288-8696</a></li>
 <li><a href="mailto:contact@vectortechsol.com"><i class="fa-solid fa-envelope"></i> contact@vectortechsol.com</a></li> 
 </ul>
 </div>
@@ -779,6 +782,23 @@ $(document).ready(function() {
         responsive: true
     } );
 } );
+
+$(document).ready(function(){
+$("#mytable #checkall").click(function () {
+        if ($("#mytable #checkall").is(':checked')) {
+            $("#mytable input[type=checkbox]").each(function () {
+                $(this).prop("checked", true);
+            });
+
+        } else {
+            $("#mytable input[type=checkbox]").each(function () {
+                $(this).prop("checked", false);
+            });
+        }
+    });
+    
+    $("[data-toggle=tooltip]").tooltip();
+});
 </script>
 <!-- end DataTable JS -->	
  

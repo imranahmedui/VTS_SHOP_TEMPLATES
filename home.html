@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Meta Tag -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name='copyright' content=''>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Title Tag  -->
+    <title>HEALTH CARE SOLUTIONS</title>
+ 
+	<!-- Web Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	<!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/9ddbcb7f65.js" crossorigin="anonymous"></script>
+   
+	 <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="css/niceselect.css"> 
+	
+	<!-- Medza StyleSheet -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+	
+	<!-- Popover StyleSheet -->
+	<link href="css/bootstrap-popover-x.css" media="all" rel="stylesheet" type="text/css" />
+	
+ <script type="text/javascript">
+
+	function darken_screen(yesno){
+		if( yesno == true ){
+			document.querySelector('.screen-darken').classList.add('active');
+		}
+		else if(yesno == false){
+			document.querySelector('.screen-darken').classList.remove('active');
+		}
+	}
+	
+	function close_offcanvas(){
+		darken_screen(false);
+		document.querySelector('.mobile-offcanvas.show').classList.remove('show');
+		document.body.classList.remove('offcanvas-active');
+	}
+
+	function show_offcanvas(offcanvas_id){
+		darken_screen(true);
+		document.getElementById(offcanvas_id).classList.add('show');
+		document.body.classList.add('offcanvas-active');
+	}
+
+	document.addEventListener("DOMContentLoaded", function(){
+		document.querySelectorAll('[data-trigger]').forEach(function(everyelement){
+			
+			let offcanvas_id = everyelement.getAttribute('data-trigger');
+			
+			everyelement.addEventListener('click', function (e) {
+				e.preventDefault();
+	        	show_offcanvas(offcanvas_id);
+	  			
+			});
+		});
+
+		document.querySelectorAll('.btn-close').forEach(function(everybutton){
+			
+			everybutton.addEventListener('click', function (e) {
+				e.preventDefault();
+	        	close_offcanvas();
+	  		});
+		});
+
+		document.querySelector('.screen-darken').addEventListener('click', function(event){
+			close_offcanvas();
+		});
+		
+    }); 
+	// DOMContentLoaded  end
+</script>
+	
+</head>
+<body>
+	
+ 
+	
+	<!-- Header -->
+	<header class="header shop">
+		<!-- Topbar -->
+		<div class="topbar">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-md-12 col-12">
+						<!-- Top Left -->
+						<div class="top-left">
+							<ul class="list-main">
+								<li><a href="tel:+1 (860) 288-8696"><i class="fa fa-phone-alt"></i><span> +1 (860) 288-8696</span></a></li>
+								<li><a href="mailto:contact@vectortechsol.com"> <i class="fa-solid fa-envelope"></i> <span>contact@vectortechsol.com</span></a></li>
+								<li><a href="#"><i class="fa-solid fa-location-dot"></i><span> Store location</span></a></li>
+								
+							</ul>
+						</div>
+						<!--/ End Top Left -->
+					</div>
+					<div class="col-lg-7 col-md-12 col-12">
+						<!-- Top Right -->
+						<div class="right-content">
+							<ul class="list-main">
+								<li><a href="#"><i class="fa-solid fa-location-dot"></i><span> Store location</span></a></li>
+								<li><i class="ti-power-off"></i><a href="login.html" class="login_signup">Login / Signup</a></li>
+							</ul>
+						</div>
+						<!-- End Top Right -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Topbar -->
+		<div class="middle-inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2 col-md-3 col-12">
+						<!-- Logo -->
+						<div class="logo">
+							<a href="index.html"><img src="img/vts_logo.jpg" alt="Medzah"></a>
+						</div>
+						<!--/ End Logo -->
+						 
+					</div>
+					<div class="col-lg-7 col-md-6 col-12">
+						<div class="search-bar-top">
+						<p>Welcome, Guest</p>
+						<div class="search-bar">
+								<select>
+									<option selected="selected">By Product</option> 
+									<option>Comparable Items</option>
+									<option>Content & Documents</option>
+								</select>
+								<form>
+									<input name="search" placeholder="Search Products Here....." type="search">
+									<button class="btnn"><i class="fa-solid fa-magnifying-glass"></i></button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-12">
+						<div class="right-bar">
+							<!-- Search Form -->
+							<div class="sinlge-bar">
+								<a href="home.html" class="single-icon"><i class="fa-solid fa-right-from-bracket"><sub> Logout</sub></i></a>
+							</div>
+							<div class="sinlge-bar">
+								<a href="#" class="single-icon" data-toggle="popover-x" data-target="#myPopover3" data-placement="bottom"><i class="fa-solid fa-file-lines"></i><span class="total-count">2</span></a>
+							</div>
+							
+							     <!-- PopoverX content -->
+                <div id="myPopover3" class="popover popover-x popover-default">
+                    <div class="arrow"></div>
+                    <h3 class="popover-header popover-title"><span class="close pull-right" data-dismiss="popover-x">&times;</span>Your recently modified orders</h3>
+                    <div class="popover-body popover-content">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td>03/23/2022 PO:</td>
+      <td class="text-right">$8,336.00</td>
+    </tr>
+    <tr>
+      <td>03/03/2022 PO:</td>
+      <td class="text-right">$163.16</td>
+    </tr>
+    <tr>
+      <td>03/02/2022 PO:</td>
+      <td class="text-right">$526.40</td>
+    </tr>
+    <tr>
+      <td>02/09/2022 PO:</td>
+      <td class="text-right">$.00</td>
+    </tr>
+    <tr>
+      <td>01/23/2022 PO:</td>
+      <td class="text-right">$19.88</td>
+    </tr>
+    
+    
+  </tbody>
+</table>
+
+			</div>
+                    <div class="popover-footer align-center">
+                     <a href="#">   View All Open Orders » </a>
+						</div>
+                </div>
+							
+							<div class="sinlge-bar shopping">
+								<a href="#" class="single-icon"><i class="fa-solid fa-cart-shopping"></i>$0.00</a>
+							 
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Header Inner -->
+		<div class="header-inner">
+			<div class="container">
+				<div class="cat-nav-head">
+					<div class="row">
+						<div class="col-12">
+				<span class="screen-darken"></span>		
+					<button data-trigger="navbar_main" class="d-lg-none btn btn-warning" type="button">  <i class="fa-solid fa-bars pr-2"></i> </button>
+	
+				<!-- ============= COMPONENT ============== -->
+<nav id="navbar_main" class="mobile-offcanvas navbar navbar-expand-lg  navbar-light">
+ <div class="container-fluid px-0">
+    <div class="offcanvas-header float-right">  
+		<button class="btn-close float-end"><i class="fa-solid fa-circle-xmark"></i></button>
+	</div>
+     
+	<ul class="navbar-nav">
+		<li class="nav-item dropdown px-0">
+			<a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> <i class="fa-solid fa-bars pr-2"></i> Browse Categories  </a>
+		    <ul class="dropdown-menu">
+			  <li><a class="dropdown-item" href="#"> Advanced Wound Care</a></li>
+			  <li><a class="dropdown-item" href="#"> Anesthesia </a></li>
+			  <li><a class="dropdown-item" href="#"> Apparel </a></li>
+			  <li><a class="dropdown-item" href="#"> Beds & Mattresses </a></li>
+			  <li><a class="dropdown-item" href="#"> Central Sterile </a></li>
+			  <li><a class="dropdown-item" href="#"> Diagnostics </a></li>
+			  <li><a class="dropdown-item" href="#"> Durable Medical Equipment (DME) </a></li>
+			  <li><a class="dropdown-item" href="#"> Environmental Services (EVS) </a></li>
+			  <li><a class="dropdown-item" href="#"> Equipment & Furnishings </a></li>
+			  <li><a class="dropdown-item" href="#"> Foot & Ankle </a></li>
+			  <li><a class="dropdown-item" href="#"> Gloves </a></li>
+			  <li><a class="dropdown-item" href="#"> Incontinence </a></li>
+			  <li><a class="dropdown-item" href="#"> Infection Prevention </a></li>
+			  <li><a class="dropdown-item" href="#"> Lab Supplies </a></li>
+			  <li><a class="dropdown-item" href="#"> Nursing Supplies/Patient Care </a></li>
+			  <li><a class="dropdown-item" href="#"> Nutrition </a></li>
+			  <li><a class="dropdown-item" href="#"> Office Supplies </a></li>
+			  <li><a class="dropdown-item" href="#"> OR/Surgery </a></li>
+			  <li><a class="dropdown-item" href="#"> Pharmacy </a></li>
+			  <li><a class="dropdown-item" href="#"> Respiratory </a></li>
+			  <li><a class="dropdown-item" href="#"> Skin Care </a></li>
+			  <li><a class="dropdown-item" href="#"> Textiles </a></li>
+			  <li><a class="dropdown-item" href="#"> Therapy & Rehabilitation </a></li>
+			  <li><a class="dropdown-item" href="#"> Urology & Ostomy </a></li>
+			  <li><a class="dropdown-item" href="#"> Vascular Access </a></li>
+			  <li><a class="dropdown-item" href="#"> Wound Care </a></li>
+		    </ul>
+		</li>
+
+		 
+	</ul>
+	<ul class="navbar-nav mx-auto bt-1">
+		<li class="nav-item"><a class="nav-link" href="home.html"> Home</a></li>
+		<li class="nav-item separate_li">/</li>
+		<li class="nav-item"><a class="nav-link" href="about.html"> About Us </a></li>
+		<li class="nav-item separate_li">/</li>
+		<li class="nav-item"><a class="nav-link" href="contact.html"> Contact Us </a></li>
+		 
+	</ul>
+
+ </div> <!-- container-fluid.// -->
+</nav>
+<!-- ============= COMPONENT END// ============== -->
+						
+					
+							 
+						</div>
+					 
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/ End Header Inner -->
+	</header>
+	<!--/ End Header -->
+	
+	 
+	 
+	
+ <!-- Start Hero Header -->
+	
+ <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li> 
+  </ol>
+  <div class="carousel-inner">
+     <div class="carousel-item active">
+      <img class="d-block w-100" src="img/hero_slider1.jpg" alt="Second slide">
+	  <div class="container">
+              <div class="carousel-caption text-center">
+                <h1>Medical Equipment And Supplies</h1>
+                <p>Affordable for every hospital, clinic and medical practice to have the very best equipment,<br>supplies and service.</p>
+                <p><a class="btn btn-lg btn-primary rounded-0 border-0" href="#" role="button">Shop Now</a></p>
+              </div>
+            </div>
+	  
+    </div>
+	
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/1.jpg" alt="Second slide">
+	  <div class="container">
+              <div class="carousel-caption text-center">
+                <h1>Medical Equipment And Supplies</h1>
+                <p>Affordable for every hospital, clinic and medical practice to have the very best equipment,<br>supplies and service.</p>
+                <p><a class="btn btn-lg btn-primary rounded-0 border-0" href="#" role="button">Shop Now</a></p>
+              </div>
+            </div>
+	  
+    </div>
+    
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+	
+ <!-- End Hero Header -->
+	
+	 
+<div class="container py-3">
+
+<div class="row img">
+<div class="col-md-4 col-sm-12 py-3"><a href="wound_care.html"><img src="img/wound_care.jpg"><div class="category_title blue">Wound Care</div></a></div>
+<div class="col-md-4 col-sm-12 py-3"><a href="wound_care.html"><img src="img/Bath_Safety.jpg"><div class="category_title maroon">Bath Safety</div></a></div>
+<div class="col-md-4 col-sm-12 py-3"><a href="wound_care.html"><img src="img/Infection_Prevention.jpg"><div class="category_title green">Infection Prevention</div></a></div>
+</div>
+
+
+<div class="row img">
+<div class="col-md-6 col-sm-12  py-3"><a href="wound_care.html"><img src="img/ortho.jpg"><div class="category_title brown">Orthopedic Care
+</div></a></div>
+
+<div class="col-md-6 col-sm-12  py-3"><a href="wound_care.html"><img src="img/Mobility.jpg"><div class="category_title light_green">Mobility Aids
+</div></a></div>
+
+</div>	
+
+
+<div class="row pt-5">
+	 <div class="col-lg-12 col-md-12 col-12">
+	 <div class="order_id_wrapper body_short_discription_wrapper mb-5">
+	 
+<h2>Featured Categories</h2><div class="float-right responsive_660"><a href="#" class="link">View All Categories</a> </div>
+<p>Shop our best-selling products, including high quality surgical implements, high performance antimicrobial cleaners, organizational exam room signals etc.</p>	 
+	 
+</div>
+ </div>
+</div>
+
+
+<div class="row">
+
+<div class="col-md-3 col-sm-12">
+<div class="single_product_home_page">
+<div class="product_img_home">
+<a href="product_detail.html"><img class="default-img" src="img/wound_care_cat.jpg" alt="#"> </a>
+</div>
+
+<div class="product_content_home">
+<div class=""><a href="#">Wound Care</a>
+<a href="#" class="btn-primary btn-sm primary_btn">Shop Now</a>									
+</div>
+										
+</div>
+</div>
+
+</div>
+
+
+
+<div class="col-md-3 col-sm-12">
+<div class="single_product_home_page">
+<div class="product_img_home">
+<a href="product_detail.html"><img class="default-img" src="img/dme.jpg" alt="#"> </a>
+</div>
+
+<div class="product_content_home">
+<div class=""><a href="#">Durable Medical Equipment</a>
+<a href="#" class="btn-primary btn-sm primary_btn">Shop Now</a>									
+</div>
+										
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+<div class="col-md-3 col-sm-12">
+<div class="single_product_home_page">
+<div class="product_img_home">
+<a href="product_detail.html"><img class="default-img" src="img/Incontinence.jpg" alt="#"> </a>
+</div>
+
+<div class="product_content_home">
+<div class=""><a href="#">Incontinence</a>
+<a href="#" class="btn-primary btn-sm primary_btn">Shop Now</a>									
+</div>
+										
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="col-md-3 col-sm-12">
+<div class="single_product_home_page">
+<div class="product_img_home">
+<a href="product_detail.html"><img class="default-img" src="img/Cold_Therapy.jpg" alt="#"> </a>
+</div>
+
+<div class="product_content_home">
+<div class=""><a href="#">Cold Therapy</a>
+<a href="#" class="btn-primary btn-sm primary_btn">Shop Now</a>									
+</div>
+										
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+<div class="col-md-3 col-sm-12">
+<div class="single_product_home_page">
+<div class="product_img_home">
+<a href="product_detail.html"><img class="default-img" src="img/Orthopedics.jpg" alt="#"> </a>
+</div>
+
+<div class="product_content_home">
+<div class=""><a href="#">Orthopedics</a>
+<a href="#" class="btn-primary btn-sm primary_btn">Shop Now</a>									
+</div>
+										
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+<div class="col-md-3 col-sm-12">
+<div class="single_product_home_page">
+<div class="product_img_home">
+<a href="product_detail.html"><img class="default-img" src="img/beds.jpg" alt="#"> </a>
+</div>
+
+<div class="product_content_home">
+<div class=""><a href="#">Beds & Mattresses</a>
+<a href="#" class="btn-primary btn-sm primary_btn">Shop Now</a>									
+</div>
+										
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-md-3 col-sm-12">
+<div class="single_product_home_page">
+<div class="product_img_home">
+<a href="product_detail.html"><img class="default-img" src="img/Infection_Prevention_2.jpg" alt="#"> </a>
+</div>
+
+<div class="product_content_home">
+<div class=""><a href="#">Infection Prevention</a>
+<a href="#" class="btn-primary btn-sm primary_btn">Shop Now</a>									
+</div>
+										
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="col-md-3 col-sm-12">
+<div class="single_product_home_page">
+<div class="product_img_home">
+<a href="product_detail.html"><img class="default-img" src="img/Textiles.jpg" alt="#"> </a>
+</div>
+
+<div class="product_content_home">
+<div class=""><a href="#">Textiles</a>
+<a href="#" class="btn-primary btn-sm primary_btn">Shop Now</a>									
+</div>
+										
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+</div>	
+	 
+		 
+<!-- start card wrapper -->
+<div class="container py-1">
+
+<div class="row">
+<div class="col-12 py-4"><div class="about_card_wrapper text-center"><h2>HEALTH CARE SOLUTIONS</h2><p>Medza is a world-class choice for online medical supplies. With an expanding range and growing team to support, Medza is leading the way in the accessibility of medical supplies and equipment.</p></div></div>
+
+
+
+
+<div class="row">
+
+<div class="col-12">
+
+<div class="card-deck">
+  <div class="card">
+    <img src="img/3pl.jpg" class="card-img-top" alt="3PL & Distribution">
+    <div class="card-body">
+      <h5 class="card-title">3PL & Distribution</h5>
+      <p class="card-text">Maintaining sufficient inventory supply is extremely important in preparing for today’s unpredictable environment. Spikes in demand and limited storage space, have brought new challenges to the way you think about your business.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted"><a href="#">Read More</a></small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/DMEServices.jpg" class="card-img-top" alt="DME Services">
+    <div class="card-body">
+      <h5 class="card-title">DME Services</h5>
+      <p class="card-text">Medzah understands the complexity of managing your soft good and bracing products while trying to provide excellent care for your patients.  Although your patients need these products, the time it takes to manage the inventory can take away from valuable time with patients.  </p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted"><a href="#">Read More</a></small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/Supplier_Diversity_Branded.jpg" class="card-img-top" alt="Supplier Diversity Branded">
+    <div class="card-body">
+      <h5 class="card-title">Supplier Diversity Branded</h5>
+      <p class="card-text">The EQUITY Program was established in partnership with a National Product Manufacturer in 2020.  It is designed to give our healthcare customers a chance to strengthen and increase their business opportunities with a minority business enterprise. </p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted"><a href="#">Read More</a></small>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+</div>
+
+</div> 
+
+<!-- end card wrapper -->	
+
+
+<div class="container py-3">
+
+<div class="row pt-5">
+	 <div class="col-lg-12 col-md-12 col-12">
+	 <div class="order_id_wrapper body_short_discription_wrapper mb-5">
+	 
+<h2>Top Trending Products</h2><div class="float-right responsive_660"><a href="#" class="link">View All Products</a> </div>
+<p>Shop our best-selling products, including high quality surgical implements, high performance antimicrobial cleaners, organizational exam room signals etc.</p>	 
+	  
+</div>
+ </div>
+</div>
+
+   
+<div class="row">
+
+<div class="col-md-3 col-sm-12">
+<div class="single_product_home_page">
+<div class="product_img_home">
+<a href="product_detail.html"><img class="default-img" src="img/Digital_Adult_Blood_Pressure.jpg" alt="#"> </a>
+</div>
+
+<div class="product_content_home">
+<div class=""><a href="#">Digital Adult Blood Pressure Monitor</a>
+<a href="#" class="btn-primary btn-sm primary_btn">Shop Now</a>									
+</div>
+										
+</div>
+</div>
+
+</div>
+
+
+
+<div class="col-md-3 col-sm-12">
+<div class="single_product_home_page">
+<div class="product_img_home">
+<a href="product_detail.html"><img class="default-img" src="img/Aneroid_Blood_Pressure.jpg" alt="#"> </a>
+</div>
+
+<div class="product_content_home">
+<div class=""><a href="#">Mobile Aneroid Blood Pressure Monitors</a>
+<a href="#" class="btn-primary btn-sm primary_btn">Shop Now</a>									
+</div>
+										
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+<div class="col-md-3 col-sm-12">
+<div class="single_product_home_page">
+<div class="product_img_home">
+<a href="product_detail.html"><img class="default-img" src="img/Fragranced_Shampoo.jpg" alt="#"> </a>
+</div>
+
+<div class="product_content_home">
+<div class=""><a href="#">Fragranced Shampoo & Body Wash</a>
+<a href="#" class="btn-primary btn-sm primary_btn">Shop Now</a>									
+</div>
+										
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="col-md-3 col-sm-12">
+<div class="single_product_home_page">
+<div class="product_img_home">
+<a href="product_detail.html"><img class="default-img" src="img/CURAD.jpg" alt="#"> </a>
+</div>
+
+<div class="product_content_home">
+<div class=""><a href="#">CURAD Cut-to-Size Adhesive Moleskin Rolls</a>
+<a href="#" class="btn-primary btn-sm primary_btn">Shop Now</a>									
+</div>
+										
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+<div class="col-md-3 col-sm-12">
+<div class="single_product_home_page">
+<div class="product_img_home">
+<a href="product_detail.html"><img class="default-img" src="img/length_disposable.jpg" alt="#"> </a>
+</div>
+
+<div class="product_content_home">
+<div class=""><a href="#">3/4 Length Disposable Face Shields with Foam Top and Elastic Band</a>
+<a href="#" class="btn-primary btn-sm primary_btn">Shop Now</a>									
+</div>
+										
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+<div class="col-md-3 col-sm-12">
+<div class="single_product_home_page">
+<div class="product_img_home">
+<a href="product_detail.html"><img class="default-img" src="img/Stay-Safe Dialysis_Catheter_Extension_Sets.jpg" alt="#"> </a>
+</div>
+
+<div class="product_content_home">
+<div class=""><a href="#">Stay-Safe Dialysis Catheter Extension Sets</a>
+<a href="#" class="btn-primary btn-sm primary_btn">Shop Now</a>									
+</div>
+										
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-md-3 col-sm-12">
+<div class="single_product_home_page">
+<div class="product_img_home">
+<a href="product_detail.html"><img class="default-img" src="img/Infant_Heel_Incision_Devices.jpg" alt="#"> </a>
+</div>
+
+<div class="product_content_home">
+<div class=""><a href="#">Infant Heel Incision Devices</a>
+<a href="#" class="btn-primary btn-sm primary_btn">Shop Now</a>									
+</div>
+										
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="col-md-3 col-sm-12">
+<div class="single_product_home_page">
+<div class="product_img_home">
+<a href="product_detail.html"><img class="default-img" src="img/Stainless_Steel_Bassinets.jpg" alt="#"> </a>
+</div>
+
+<div class="product_content_home">
+<div class=""><a href="#">Stainless Steel Bassinets</a>
+<a href="#" class="btn-primary btn-sm primary_btn">Shop Now</a>									
+</div>
+										
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+</div>	
+
+
+
+<!-- start logo carousel -->
+
+<!-- start card wrapper -->
+<div class="container py-1">
+
+<div class="row">
+<div class="col-12 py-4">
+<div class="about_card_wrapper text-center"><h2>Best-Selling Brands</h2>
+<p>Check out our popular supplier lines for the best in disposables, clinical instruments, and much more.</p>
+</div>
+</div>
+
+
+ <div class="col-12 customer-logos slider">
+      <div class="slide"><img src="img/curad.png"></div>
+      <div class="slide"><img src="img/ave_scrubs.png"></div>
+      <div class="slide"><img src="img/fitright.png"></div>
+      <div class="slide"><img src="img/remedy.png"></div> 
+      <div class="slide"><img src="img/curad.png"></div>
+      <div class="slide"><img src="img/ave_scrubs.png"></div> 
+   </div>
+   
+   
+
+</div>
+</div>
+
+
+
+
+<!-- end logo carousel -->
+
+
+
+ 
+	<!-- Start Footer -->
+<section class="shop_newsletter section">
+<div class="container">
+<div class="row">
+<div class="col-sm-12 col-md-6 col-lg-6">
+<h4>Join our Newsletter</h4>
+<p>Be among the first to see our latest offers and events to come</p>
+</div>
+
+<div class="col-sm-12 col-md-6 col-lg-6">
+ <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+								<input name="EMAIL" placeholder="Your Email Address" required="" type="email">
+								<button class="btn">Subscribe</button>
+							</form>
+
+</div>
+</div>		
+		
+</div>
+	 
+	 
+	
+ </section>
+
+<footer class="footer">
+<!-- Footer Top -->
+
+<div class="footer-top section">
+		
+<div class="container">
+<div class="row">
+
+<div class="col-lg-3 col-md-12 col-sm-12">
+<!-- Logo -->
+						<div class="logo">
+							<a href="home.html"><img src="img/vts_logo.jpg" alt="VTS"></a>
+						</div>
+						<!--/ End Logo -->
+</div>
+
+<div class="col-lg-6 col-md-7 col-sm-12">
+<div class="single-footer links">
+<ul>
+<li><a href="delivery.html">Delivery</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="newsletter.html">Newsletter</a></li>
+<li><a href="">Compare Products</a></li>
+<li><a href="">Shop by Brand</a></li>
+<li><a href="">Shop by Category</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+<li><a href="faq.html">FAQ</a></li> 
+<li><a href="login.html">Login</a></li>
+<li><a href="signup.html">Signup</a></li>
+<li><a href="term_conditions.html">Terms and Conditions of Use</a></li>
+</ul>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-5 col-sm-12">
+<div class="single-footer address">
+<ul>
+<li><i class="fa-solid fa-location-dot"></i> 317 George St Suite 320 New Brunswick NJ 08901</li>
+<li><a href="tel:+1 (860) 288-8696"><i class="fa fa-phone-alt" aria-hidden="true"></i> +1 (860) 288-8696</a></li>
+<li><a href="mailto:contact@vectortechsol.com"><i class="fa-solid fa-envelope"></i> contact@vectortechsol.com</a></li> 
+</ul>
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+
+<div class="copyright">
+			<div class="container">
+				<div class="inner">
+					<div class="row">
+						<div class="col-12">
+							<div class="left">
+								<p>Empowered by TIBITUS copyright and property of <a href="">Vector Technologies LLC.</a></p>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+</div>
+
+<!-- End Footer -->	
+	 
+
+	
+	 
+	
+	 
+ 
+	<!-- Jquery -->
+    <script src="js/jquery.min.js"></script>  
+ 	<!-- Popper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="js/bootstrap.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+ <!-- Popover JS -->
+	 <script src="js/bootstrap-popover-x.js" type="text/javascript"></script>
+  
+<!-- logo carousel JS-->
+<script>
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: true,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+</script>
+</body>
+</html>

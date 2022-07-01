@@ -1198,6 +1198,26 @@
 }
 
 @media only screen and (max-width: 660px) {
+.card-deck .card {
+  flex: auto;
+  margin: 12px auto;
+  padding: 25px;
+}
+.card-footer {
+	border-radius: 0px !important;
+}
+.carousel-caption {
+  bottom: 10%;
+} 
+.carousel-caption h1 { 
+  font-size: 30px;
+  line-height: 35px;
+}
+.carousel-inner p { 
+  font-size: 18px;
+  line-height: 24px; 
+}
+
 .shop-shorter {
 	  float: left;
 	  width: 100%;
@@ -1250,6 +1270,17 @@ font-size: 20px;
 
 /* Mobile Screen */
 @media only screen and (max-width: 480px) {
+	.carousel-caption {
+  bottom: 20%;
+}
+.carousel-caption h1 {
+  font-size: 20px;
+  line-height: 24px;
+}
+.carousel-inner p {
+  font-size: 16px;
+  line-height: 18px;
+}
 .btn_action{
 	padding: 7px 7px 7px 7px !important;
 	font-size: 12px;

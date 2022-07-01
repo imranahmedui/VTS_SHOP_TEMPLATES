@@ -104,7 +104,7 @@
 						<!-- Top Left -->
 						<div class="top-left">
 							<ul class="list-main">
-								<li><a href="tel:+15742039845"><i class="fa fa-phone-alt"></i><span> +1 (574) 203-9845</span></a></li>
+								<li><a href="tel:+1 (860) 288-8696"><i class="fa fa-phone-alt"></i><span> +1 (860) 288-8696</span></a></li>
 								<li><a href="mailto:contact@vectortechsol.com"> <i class="fa-solid fa-envelope"></i> <span>contact@vectortechsol.com</span></a></li>
 								<li><a href="#"><i class="fa-solid fa-location-dot"></i><span> Store location</span></a></li>
 							</ul>
@@ -394,7 +394,7 @@
  
 	
 	  
-	<table id="example" class="table table-striped table-bordered table-hover display nowrap compact view_item_list" style="width:100%">
+	<table id="mytable" class="table table-striped table-bordered table-hover display nowrap compact view_item_list" style="width:100%">
         <thead>
             <tr>
                  
@@ -406,7 +406,7 @@
                 <th class="text-center">Formulary</th>
                 <th class="text-center">Contract Price</th>
                 <th class="text-center">Price</th>
-				<th><input type="checkbox" name="select_all" value="1" id="example-select-all"></th>
+				<th><input type="checkbox" name="select_all" value="1" id="checkall"></th>
   			   
             </tr>
         </thead>
@@ -431,7 +431,7 @@
                 <td> </td>
                 <td class="text-center"> </td>
                 <td class="text-right">$341.03</td>
-				 <td></td>  
+				 <td><input type="checkbox" class="checkthis" /></td>  
             </tr>
              <tr>
               <td>B-D405292H</td>
@@ -453,7 +453,7 @@
                 <td> </td>
                 <td class="text-center"> </td>
                 <td class="text-right">$7.24</td>
-				<td></td>   
+				<td><input type="checkbox" class="checkthis" /></td>   
             </tr>
             <tr>
               <td>B-D405292Z</td>
@@ -475,7 +475,7 @@
                 <td> </td>
                 <td class="text-center"> </td>
                 <td class="text-right">$68.32</td>
-				<td></td>   
+				<td><input type="checkbox" class="checkthis" /></td>   
             </tr>
              <tr>
               <td>B-D405199</td>
@@ -497,7 +497,7 @@
                 <td> </td>
                 <td class="text-center"> </td>
                 <td class="text-right">$2,649.22</td>
-			<td></td>  	 
+			<td><input type="checkbox" class="checkthis" /></td>  	 
             </tr>
           </tbody>  
     </table>
@@ -760,7 +760,7 @@
 <div class="single-footer address">
 <ul>
 <li><i class="fa-solid fa-location-dot"></i> 317 George St Suite 320 New Brunswick NJ 08901</li>
-<li><a href="tel:+1(574)203-9845"><i class="fa fa-phone-alt" aria-hidden="true"></i> +1 (574) 203-9845</a></li>
+<li><a href="tel:+1 (860) 288-8696"><i class="fa fa-phone-alt" aria-hidden="true"></i> +1 (860) 288-8696</a></li>
 <li><a href="mailto:contact@vectortechsol.com"><i class="fa-solid fa-envelope"></i> contact@vectortechsol.com</a></li> 
 </ul>
 </div>
@@ -1027,6 +1027,23 @@ $(document).ready(function() {
         responsive: true
     } );
 } );
+
+$(document).ready(function(){
+$("#mytable #checkall").click(function () {
+        if ($("#mytable #checkall").is(':checked')) {
+            $("#mytable input[type=checkbox]").each(function () {
+                $(this).prop("checked", true);
+            });
+
+        } else {
+            $("#mytable input[type=checkbox]").each(function () {
+                $(this).prop("checked", false);
+            });
+        }
+    });
+    
+    $("[data-toggle=tooltip]").tooltip();
+});
 </script>
 <!-- end DataTable JS -->		
 
